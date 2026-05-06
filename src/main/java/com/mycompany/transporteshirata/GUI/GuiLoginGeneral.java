@@ -157,16 +157,24 @@ public class GuiLoginGeneral extends javax.swing.JFrame {
                 System.out.println("Bienvenido Administrador");
                 cargo_global = "administrador";
                 JOptionPane.showMessageDialog(null, "Bienvenido Administrador");
+                this.setVisible(false);
+                Principal p = new Principal();
+                p.setVisible(true);
 
             } else if (cargo.equals("conductor")) {
                 System.out.println("Bienvenido Conductor");
                 cargo_global = "conductor";
                 JOptionPane.showMessageDialog(null, "Bienvenido Conductor");
-
+                this.setVisible(false);
+                Principal p = new Principal();
+                p.setVisible(true);
             } else if (cargo.equals("personal")) {
                 System.out.println("Bienvenido Personal");
                 cargo_global = "personal";
                 JOptionPane.showMessageDialog(null, "Bienvenido Personal");
+                this.setVisible(false);
+                Principal p = new Principal();
+                p.setVisible(true);
             }
 
         } else {
