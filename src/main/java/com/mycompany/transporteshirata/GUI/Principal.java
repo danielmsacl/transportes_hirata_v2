@@ -47,11 +47,10 @@ public class Principal extends javax.swing.JFrame {
         openMenuItem4 = new javax.swing.JMenuItem();
         bt_menu2 = new javax.swing.JMenu();
         bt_mantenimiento = new javax.swing.JMenuItem();
+        bt_mantenimiento2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
-        openMenuItem3 = new javax.swing.JMenuItem();
         bt_menu3 = new javax.swing.JMenu();
         bt_mantenimiento1 = new javax.swing.JMenuItem();
-        openMenuItem2 = new javax.swing.JMenuItem();
         bt_menu4 = new javax.swing.JMenu();
         openMenuItem5 = new javax.swing.JMenuItem();
 
@@ -93,7 +92,7 @@ public class Principal extends javax.swing.JFrame {
 
         openMenuItem4.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         openMenuItem4.setMnemonic('o');
-        openMenuItem4.setText("Registrar conductor");
+        openMenuItem4.setText("Registrar equipo");
         openMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 openMenuItem4ActionPerformed(evt);
@@ -109,13 +108,23 @@ public class Principal extends javax.swing.JFrame {
 
         bt_mantenimiento.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         bt_mantenimiento.setMnemonic('o');
-        bt_mantenimiento.setText("Hacer mantenimiento");
+        bt_mantenimiento.setText("Hacer mantenimiento camion");
         bt_mantenimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_mantenimientoActionPerformed(evt);
             }
         });
         bt_menu2.add(bt_mantenimiento);
+
+        bt_mantenimiento2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        bt_mantenimiento2.setMnemonic('o');
+        bt_mantenimiento2.setText("Hacer mantenimiento equipo");
+        bt_mantenimiento2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_mantenimiento2ActionPerformed(evt);
+            }
+        });
+        bt_menu2.add(bt_mantenimiento2);
 
         jMenuItem1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jMenuItem1.setText("Historial Mantenimiento");
@@ -125,16 +134,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         bt_menu2.add(jMenuItem1);
-
-        openMenuItem3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        openMenuItem3.setMnemonic('o');
-        openMenuItem3.setText("Volver");
-        openMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                openMenuItem3ActionPerformed(evt);
-            }
-        });
-        bt_menu2.add(openMenuItem3);
 
         menuBar.add(bt_menu2);
 
@@ -151,16 +150,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         bt_menu3.add(bt_mantenimiento1);
-
-        openMenuItem2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        openMenuItem2.setMnemonic('o');
-        openMenuItem2.setText("Volver");
-        openMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                openMenuItem2ActionPerformed(evt);
-            }
-        });
-        bt_menu3.add(openMenuItem2);
 
         menuBar.add(bt_menu3);
 
@@ -227,10 +216,6 @@ public class Principal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void openMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItem3ActionPerformed
-
-    }//GEN-LAST:event_openMenuItem3ActionPerformed
-
     private void bt_mantenimiento1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_mantenimiento1ActionPerformed
         GuiKilometraje pc = new GuiKilometraje();
         pc.setVisible(true);
@@ -241,15 +226,15 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_openMenuItem4ActionPerformed
 
-    private void openMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItem2ActionPerformed
-
-    }//GEN-LAST:event_openMenuItem2ActionPerformed
-
     private void openMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openMenuItem5ActionPerformed
         this.setVisible(false);
         GuiLoginGeneral p = new GuiLoginGeneral();
         p.setVisible(true);
     }//GEN-LAST:event_openMenuItem5ActionPerformed
+
+    private void bt_mantenimiento2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_mantenimiento2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_mantenimiento2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -289,6 +274,7 @@ public class Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem bt_mantenimiento;
     private javax.swing.JMenuItem bt_mantenimiento1;
+    private javax.swing.JMenuItem bt_mantenimiento2;
     private javax.swing.JMenu bt_menu1;
     private javax.swing.JMenu bt_menu2;
     private javax.swing.JMenu bt_menu3;
@@ -300,8 +286,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem openMenuItem;
     private javax.swing.JMenuItem openMenuItem1;
-    private javax.swing.JMenuItem openMenuItem2;
-    private javax.swing.JMenuItem openMenuItem3;
     private javax.swing.JMenuItem openMenuItem4;
     private javax.swing.JMenuItem openMenuItem5;
     // End of variables declaration//GEN-END:variables
